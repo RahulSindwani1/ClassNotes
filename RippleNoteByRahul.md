@@ -38,3 +38,9 @@ The second heuristic leverages the transaction patterns performed by a user when
 ![alt text](/Images/Capture3.PNG)
 
 **Figure 3 :**  Visualization of the deanonymization process over our clustered graph. The sizes of the nodes correspond with the number of transactions involving the nodes. Nodes with the same color belong to the same cluster. Gray nodes depict wallets not deanonymized by our heuristics. Links are colored with the color of the sending wallet
+
+### **[Challenges and Differences with Related Works]** ### 
+
+The most prevalent approach to improve anonymity for Bitcoin users is the idea of hiding in a group by Bitcoin mixing: the users in the group exchange their coins with each other to hide the relations between users and coins from an external observer. Several Bitcoin mixing approaches have been proposed
+[3, 13, 46, 49, 51, 57, 78, 83, 86]. Several research works [60, 73, 84] propose mechanisms to cluster accounts from different social networks that are owned by the same person. There are several approaches to enhance social networks with privacy [56, 67, 79, 85]. All of these approaches modify the network connectivity so that the
+privacy of the link is preserved and the loss of system reliability is bounded.  Nevertheless, none of these works show how privacy of users can be thwarted. This work characterizes the current state of the Ripple network along with its complete set of transactions. Additionally, it shed light on the gap–due to certain patterns of use and interaction between parties in the network—between the (supposedly) provided privacy available in the Ripple network and the actual privacy achieved by the current Ripple users and, most importantly, their transactions.
