@@ -34,10 +34,14 @@ The ﬁrst heuristic presented by the paper is based on a settlement transaction
 #### Heuristic 2 : #### 
 
 The second heuristic leverages the transaction patterns performed by a user when deploying the hot-cold wallet security mechanism [1], which limits her risk proﬁle on the Ripple network by enforcing a separation of roles that promotes stronger security. This heuristic allows to link several hot and cold Ripple wallets belonging to the same user.
+The clusters acheived by heuristics are shown in Figure 3.
 
 ![alt text](/Images/Capture3.PNG)
 
 **Figure 3 :**  Visualization of the deanonymization process over our clustered graph. The sizes of the nodes correspond with the number of transactions involving the nodes. Nodes with the same color belong to the same cluster. Gray nodes depict wallets not deanonymized by our heuristics. Links are colored with the color of the sending wallet
+
+The paper further studied the privacy implications of our heuristics by applying the deanonymization process over the transactions for whichat least a wallet has been clustered by the heuristics. The paper deanonymized 85,962 XRP payments and 649,640 settlement transactions, which jointly represent the 78.7% of the total transactions we
+have considered in our de-anonymization process. These results follow the fact that the probability that a Ripple wallet gets deanonymized is bigger when the wallet is clustered with our heuristics
 
 ### **[Challenges and Differences with Related Works]** ### 
 
