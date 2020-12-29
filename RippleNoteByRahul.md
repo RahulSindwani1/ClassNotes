@@ -47,7 +47,9 @@ privacy of the link is preserved and the loss of system reliability is bounded. 
 
 ### **[References]** ### 
 [1] Bitcoin Wiki: Mixing Services. https://en.bitcoin.it/wiki/Category:Mixing_Services.
+
 [2] CoinJoin: Bitcoin Privacy for the Real World. Post on Bitcoin Forum, Aug. 2013. https://bitcointalk.org/index.php?topic=279249.
+
 [3] Barber, S., Boyen, X., Shi, E., and Uzun, E. 16th International Conference Financial Cryptography and Data Security. 2012, ch. Bitter to Better — How to Make Bitcoin a Better Currency, pp. 399–414.
 [4] Bissias, G., Ozisik, A. P., Levine, B. N., and Liberatore, M. Sybil-resistant mixing for bitcoin. In Proceedings of the 13th Workshop on Privacy in the Electronic Society,
 WPES ’14, pp. 149–158.
