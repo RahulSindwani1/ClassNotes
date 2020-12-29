@@ -31,14 +31,23 @@ There are four participants in Zcash network.
 1. **Founders** took part in the initial creation and release of Zcash,and will receive 20% of all newly generated coins (currently 2.5 ZEC out of the 12.5 ZEC block reward). 
 2. **Miners** take part in the maintenance of the ledger, and in doing so receive newly generated coins (10 out of the 12.5 ZEC block reward), as well as any fees from the transactions included in the blocks they mine.
 3. **Services** are entities that accept ZEC as some form of payment. These include exchanges like Bitﬁnex, which allow users to trade ﬁat currencies and other cryptocurrencies for ZEC (and vice versa), and platforms like ShapeShift 
-4. **Miners** take part in the maintenance of the ledger, and in doing so receive newly generated coins (10 out of the 12.5 ZEC block reward), as well as any fees from the transactions included in the blocks they mine.
-5.  **Users** are participants who hold and transact in ZEC at a more individual level.
+4.  **Users** are participants who hold and transact in ZEC at a more individual level.
 
 
 ### **[Paper Contribution]** ### 
 The paper provide the first in-depth empirical analysis of anonymity in Zcash, in order to examine these claims and more generally provide a longitudinal study of how Zcash has evolved and who its main participants are. The paper discuss the aspect of Zcash by adapting the analysis that has already been developed for Bitcoin, and ﬁnd that exchanges typically dominate this part of the blockchain. The study performed the analysis using a custom set of Python scripts equipped with PySpark and parsed the block chain on January 21 2018, at which point 258,472 blocks had been mined. Overall, 3,106,643 ZEC had been generated since the genesis block, out of which 2,485,461 ZEC went to the miners and the rest (621,182 ZEC) went to the founders. Across all blocks, there were 2,242,847 transactions. A complete breakdown of the transaction types is in Table 1
 
 ![alt text](/Images/Capture5.PNG)
+
+#### T-address clustering ####
+
+**Heuristics 1** If two or more t-addresses are inputs in the same transaction (whether that transaction is transparent,shielded, or mixed), then they are controlled by the same entity.
+
+**Heuristics 2** Heuristic 2. If one (or more) address is an input taddress in a vJoinSplit transaction and a second address is an output t-address in the same vJoinSplit transaction, then if the size of zOut is 1 (i.e., this is the only transparent output address), the second address belongs to the same user who controls the input addresses.
+
+**Results** Running Heuristic 1 resulted in 560,319 clusters, of which 97,539 contained more than a single address. As can be seen in Table 2, many of the exchanges are associated with some of the biggest clusters, with four out of the top five clusters belonging to popular exchanges.
+
+![alt text](/Images/Capture6.PNG)
 
 **Figure 2 :**  A visualization of the Ripple network as of December 2015. We show only nodes with at least one link in the network. Different colors represent the communities (as computed by Gephi) in the network.
 
