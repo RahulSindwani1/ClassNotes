@@ -29,8 +29,8 @@ This work aims at improving the understanding of the traceability of Ripple ﬂo
 
 #### Heuristic 1 : ####
 
-The ﬁrst heuristic presented by the paper is based on a settlement transaction between two wallet owners over their Ripple link to settle their bitcoin exchange. This heuristic enables linking of Bitcoin and Ripple wallets owned by the two involved users. The paper use the publicly available information regarding deposit and withdrawal transactions at the gateways to link together Ripple and Bitcoin wallets that belong to the same user. When deploying the heuristic in practice, the paper do take into account the
-change wallet and Bitcoin mixing transactions. The avoid them by only considering Bitcoin transactions with at most 2 output wallets (the receiving wallet and the change wallet). In the results the paper observe 2 Bitcoin wallets that are linked to 15 and 49 Ripple wallets each, while the rest are linked to at most 5 Ripple wallets. Therefore,
+The ﬁrst heuristic presented by the paper is based on a settlement transaction between two wallet owners over their Ripple link to settle their bitcoin exchange. This heuristic enables linking of Bitcoin and Ripple wallets owned by the two involved users. The paper use the publicly available information regarding deposit and withdrawal transactions at the gateways to link together Ripple and Bitcoin wallets that belong to the same user. When deploying the heuristic in practice, the paper do not take into account the
+change wallet and Bitcoin mixing transactions. The paper avoid them by only considering Bitcoin transactions with at most 2 output wallets (the receiving wallet and the change wallet). In the results the paper observe 2 Bitcoin wallets that are linked to 15 and 49 Ripple wallets each, while the rest are linked to at most 5 Ripple wallets. Therefore,
 the paper consider them as outliers and discard them.
 
 #### Heuristic 2 : #### 
