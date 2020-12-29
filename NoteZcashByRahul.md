@@ -8,11 +8,16 @@ Zcash is one with the strongest anonymity guarantees, due to its basis in well-r
 #### How Zcash Works : ####
 
 Zcash (ZEC) is an alternative cryptocurrency developed asa(code) fork of Bitcoin that aims to break the link between senders and recipients in a transaction. In Bitcoin, recipients receive funds into addresses(referred to as the vOut in a transaction),and when they spend them they do so from these addresses (referred to as the vIn in a transaction). Any transaction which interacts with the so-called shielded pool in Zcash does so through the inclusion of a vJoinSplit, which speciﬁes where the coins are coming from and where they are going. To receive funds, users can provide either a transparent address(t-address) or a shielded address (z-address). Coins that are held in z-addresses are said to be in the shielded pool.
+
 To specify where the funds are going, a vJoinSplit contains
 1. a list of output t-addresses with funds assigned to them (called zOut)
 2. two shielded outputs, and 
 3. an encrypted memo ﬁeld. 
 
+To specify where the funds are coming from, a vJoinSplit also contains 
+1. a list of input t-addresses (called zIn), 
+2. two double-spending tokens, and 
+3. a zeroknowledge proof.
 
 ![alt text](/Images/Capture1.PNG)
 
