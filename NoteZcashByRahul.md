@@ -34,14 +34,11 @@ There are four participants in Zcash network.
 4. **Miners** take part in the maintenance of the ledger, and in doing so receive newly generated coins (10 out of the 12.5 ZEC block reward), as well as any fees from the transactions included in the blocks they mine.
 5.  **Users** are participants who hold and transact in ZEC at a more individual level.
 
-#### Transactions in Ripple Network : ####
-
-Ripple allows two types of transactions: direct XRP payments and path-based settlement transactions. A direct payment involves a transfer of XRP between two wallets which may not have a credit path between them. Path-based settlement transactions transfer any type of credit (ﬁat currencies, cryptocurrencies and user-deﬁned currencies) between  two wallets having a suitable set of credit paths between them.
 
 ### **[Paper Contribution]** ### 
-The paper visualize the Ripple network in Figure 2. In total there are 470 communities composed only of two or more nodes. The communities composed of bigger number of nodes include the gateways wallets. Finally, communities with 2 to 7 nodes are the most frequent in the Ripple network. This community structure indicates the Ripple network is developing.
+The paper provide the first in-depth empirical analysis of anonymity in Zcash, in order to examine these claims and more generally provide a longitudinal study of how Zcash has evolved and who its main participants are. The paper discuss the aspect of Zcash by adapting the analysis that has already been developed for Bitcoin, and ﬁnd that exchanges typically dominate this part of the blockchain. The study performed the analysis using a custom set of Python scripts equipped with PySpark and parsed the block chain on January 21 2018, at which point 258,472 blocks had been mined. Overall, 3,106,643 ZEC had been generated since the genesis block, out of which 2,485,461 ZEC went to the miners and the rest (621,182 ZEC) went to the founders. Across all blocks, there were 2,242,847 transactions. A complete breakdown of the transaction types is in Table 1
 
-![alt text](/Images/Capture2.PNG)
+![alt text](/Images/Capture5.PNG)
 
 **Figure 2 :**  A visualization of the Ripple network as of December 2015. We show only nodes with at least one link in the network. Different colors represent the communities (as computed by Gephi) in the network.
 
