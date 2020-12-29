@@ -9,6 +9,8 @@ Ripple is a decentralized I owe you (IOU) transaction network that enables trans
 
 The Ripple network is a weighted, directed graph G = (V,E). The set V of vertices represents the wallets in the network. The set E of weighted edges represents the IOU credit links between wallets. The credit available on an edge is lower-bounded by 0 and is upper-bounded by ∞ by default, while a more strict upper bound can optionally be adopted by the wallet owner. A new wallet willing to interact with others in the Ripple network, and not yet having any trusted wallet to interact with, needs to receive some IOUs on a credit link. The Ripple network solves this bootstrapping problem by introducing gateways.A gateway isa well-known reputed wallet that several wallets in the system can trust to create and maintain a credit line in a correct manner.
 
+![alt text](https://github.com/RahulSindwani1/ClassNotes/tree/main/Images/Capture1.PNG)
+
 #### Transactions in Ripple Network : ####
 
 Ripple allows two types of transactions: direct XRP payments and path-based settlement transactions. A direct payment involves a transfer of XRP between two wallets which may not have a credit path between them. Path-based settlement transactions transfer any type of credit (ﬁat currencies, cryptocurrencies and user-deﬁned currencies) between  two wallets having a suitable set of credit paths between them.
