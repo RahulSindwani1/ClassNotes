@@ -3,7 +3,13 @@
 
 ### **[Background]** ###  
 
-Zcash is one with the strongest anonymity guarantees, due to its basis in well-regarded cryptographic research. 
+Zcash is one with the strongest anonymity guarantees, due to its basis in well-regarded cryptographic research. Zcash does not require all transactions to take place within the shielded pool itself: it also supports so-called transparent transactions, which are essentially the same as transactions in Bitcoin in that they reveal the pseudonymous addresses of both the senders and recipients, and the amount being sent. It does require, however, that all newly generated coins pass through the shielded pool before being spent further, thus ensuring that all coins have been shielded at least once as shown in Figure 1.
+
+
+![alt text](/Images/Capture4.PNG)
+
+**Figure 1 :** A simple diagram illustrating the different types of Zcash transactions. All transaction types are depicted and described with respect to a single input and output, but can be generalized to handle multiple inputs and outputs.
+
 
 #### How Zcash Works : ####
 
@@ -19,9 +25,14 @@ To specify where the funds are coming from, a vJoinSplit also contains
 2. two double-spending tokens, and 
 3. a zeroknowledge proof.
 
-![alt text](/Images/Capture1.PNG)
-
-**Figure 1 :** . An illustrative example of the Ripple network. For readability, every Ripple wallet is represented by a name with superscript ∗ instead of a hashed public key used in practice. Values in {} represent the XRP currency balance, and edges represent credit links between pairs of connected nodes. The edge weights show IOU credit values on the edges. The edges weights are lowerbounded by zero and upper-bounded by ∞. For readability, we show only one currency on the edges. 
+#### Participants ####
+ 
+There are four participants in Zcash network.
+1. **Founders** took part in the initial creation and release of Zcash,and will receive 20% of all newly generated coins (currently 2.5 ZEC out of the 12.5 ZEC block reward). 
+2. **Miners** take part in the maintenance of the ledger, and in doing so receive newly generated coins (10 out of the 12.5 ZEC block reward), as well as any fees from the transactions included in the blocks they mine.
+3. **Services** are entities that accept ZEC as some form of payment. These include exchanges like Bitﬁnex, which allow users to trade ﬁat currencies and other cryptocurrencies for ZEC (and vice versa), and platforms like ShapeShift 
+4. **Miners** take part in the maintenance of the ledger, and in doing so receive newly generated coins (10 out of the 12.5 ZEC block reward), as well as any fees from the transactions included in the blocks they mine.
+5.  **Users** are participants who hold and transact in ZEC at a more individual level.
 
 #### Transactions in Ripple Network : ####
 
