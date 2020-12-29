@@ -29,19 +29,20 @@ This work aims at improving the understanding of the traceability of Ripple ﬂo
 
 #### Heuristic 1 : ####
 
-The ﬁrst heuristic presented by the paper is based on a settlement transaction between two wallet owners over their Ripple link to settle their bitcoin exchange. This heuristic enables linking of Bitcoin and Ripple wallets owned by the two involved users.
+The ﬁrst heuristic presented by the paper is based on a settlement transaction between two wallet owners over their Ripple link to settle their bitcoin exchange. This heuristic enables linking of Bitcoin and Ripple wallets owned by the two involved users. The paper use the publicly available information regarding deposit and withdrawal transactions at the gateways to link together Ripple and Bitcoin wallets that belong to the same user. When deploying the heuristic in practice, the paper do take into account the
+change wallet and Bitcoin mixing transactions. The avoid them by only considering Bitcoin transactions with at most 2 output wallets (the receiving wallet and the change wallet). In the results the paper observe 2 Bitcoin wallets that are linked to 15 and 49 Ripple wallets each, while the rest are linked to at most 5 Ripple wallets. Therefore,
+the paper consider them as outliers and discard them.
 
 #### Heuristic 2 : #### 
 
-The second heuristic leverages the transaction patterns performed by a user when deploying the hot-cold wallet security mechanism [1], which limits her risk proﬁle on the Ripple network by enforcing a separation of roles that promotes stronger security. This heuristic allows to link several hot and cold Ripple wallets belonging to the same user.
-The clusters acheived by heuristics are shown in Figure 3.
+The second heuristic leverages the transaction patterns performed by a user when deploying the hot-cold wallet security mechanism [1], which limits her risk proﬁle on the Ripple network by enforcing a separation of roles that promotes stronger security. This heuristic allows to link several hot and cold Ripple wallets belonging to the same user. Ripple defines the hot-cold wallet security mechanism to issue IOUs of any currency. The cold wallet is publicly linked to a certain user. However, actual issuing of the IOUs in a credit link extended to the cold wallet is performed by the hot wallet as follows. First, the hot wallet creates a credit link with the cold wallet. Then, when the owner of the cold wallet must extend credit to a user, she uses the hot wallet to extend that credit, using for this settlement transaction the existing path (hot wallet) ← (cold
+wallet) → (user wallet). The clusters acheived by heuristics are shown in Figure 3.
 
 ![alt text](/Images/Capture3.PNG)
 
 **Figure 3 :**  Visualization of the deanonymization process over our clustered graph. The sizes of the nodes correspond with the number of transactions involving the nodes. Nodes with the same color belong to the same cluster. Gray nodes depict wallets not deanonymized by our heuristics. Links are colored with the color of the sending wallet
 
-The paper further studied the privacy implications of the heuristics by applying the deanonymization process over the transactions for whichat least a wallet has been clustered by the heuristics. The paper deanonymized 85,962 XRP payments and 649,640 settlement transactions, which jointly represent the 78.7% of the total transactions we
-have considered in our de-anonymization process. These results follow the fact that the probability that a Ripple wallet gets deanonymized is bigger when the wallet is clustered with our heuristics
+The paper further studied the privacy implications of the heuristics by applying the deanonymization process over the transactions for whichat least a wallet has been clustered by the heuristics. The paper deanonymized 85,962 XRP payments and 649,640 settlement transactions, which jointly represent the 78.7% of the total transactions considered in the de-anonymization process. These results follow the fact that the probability that a Ripple wallet gets deanonymized is bigger when the wallet is clustered with our heuristics
 
 ### **[Challenges and Differences with Related Works]** ### 
 
