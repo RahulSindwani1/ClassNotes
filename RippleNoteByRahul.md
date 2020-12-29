@@ -18,7 +18,7 @@ The Ripple network is a weighted, directed graph G = (V,E). The set V of vertice
 Ripple allows two types of transactions: direct XRP payments and path-based settlement transactions. A direct payment involves a transfer of XRP between two wallets which may not have a credit path between them. Path-based settlement transactions transfer any type of credit (ﬁat currencies, cryptocurrencies and user-deﬁned currencies) between  two wallets having a suitable set of credit paths between them.
 
 ### **[Paper Contribution]** ### 
-The paper visualize the Ripple network we crawled in Figure 3.
+The paper visualize the Ripple network in Figure 2. In total there are 470 communities composed only of two or more nodes. The communities composed of bigger number of nodes include the gateways wallets. Finally, communities with 2 to 7 nodes are the most frequent in the Ripple network. This community structure indicates the Ripple network is developing.
 
 ![alt text](/Images/Capture2.PNG)
 
