@@ -43,13 +43,13 @@ The paper provide the first in-depth empirical analysis of anonymity in Zcash, i
 
 **Heuristics 1** If two or more t-addresses are inputs in the same transaction (whether that transaction is transparent,shielded, or mixed), then they are controlled by the same entity.
 
-**Heuristics 2** Heuristic 2. If one (or more) address is an input taddress in a vJoinSplit transaction and a second address is an output t-address in the same vJoinSplit transaction, then if the size of zOut is 1 (i.e., this is the only transparent output address), the second address belongs to the same user who controls the input addresses.
+**Heuristics 2** If one (or more) address is an input taddress in a vJoinSplit transaction and a second address is an output t-address in the same vJoinSplit transaction, then if the size of zOut is 1 (i.e., this is the only transparent output address), the second address belongs to the same user who controls the input addresses.
 
 **Results** Running Heuristic 1 resulted in 560,319 clusters, of which 97,539 contained more than a single address. As can be seen in Table 2, many of the exchanges are associated with some of the biggest clusters, with four out of the top five clusters belonging to popular exchanges.
 
 ![alt text](/Images/Capture6.PNG)
 
-**Heuristics 3/ Founder Heuristic** Any z-to-t transaction carrying 250.0001 ZEC in value is done by the founders.4.
+**Heuristics 3/ Founder Heuristic** Any z-to-t transaction carrying 250.0001 ZEC in value is done by the founders.
 
 **Heuristic 4/Miner Heuristic**  If a z-to-t transaction has over 100 output taddresses, one of which belongs to a known mining pool, then we label the transaction as a mining withdrawal (associated with that pool), and label all non-pool output t-addresses as belonging to miners. As a result of running this heuristic, the paper tagged 110,918 addresses as belonging to miners, and linked a much more significant portion of the z-to-t transactions as shown in Figure 1.
 
