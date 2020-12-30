@@ -62,7 +62,7 @@ The paper provide the first in-depth empirical analysis of anonymity in Zcash, i
 There has been a significant volume of research in providing solutions for existing cryptocurrencies that allow interested users to mix their coins in a way that achieves better anonymity than regular transactions [15, 41, 21, 24, 39, 14, 22, 25]. There has also been a significantvolume of research on de-anonymizing Bitcoin [37, 38,12, 27, 40]. In comparison, this paper implements heuristics but also provides a broader perspective on the entire Zcash ecosystem, as well as a more in-depth analysis of all interactions with (and within) the shielded pool.
 
 ### **[Conclusions]** ### 
-The study applied both well-known clustering heuristics that have been developed for Bitcoin and attribution heuristics we developed ourselves that take into account Zcash’s shielded pool and its unique cast of characters. As with previous empirical analyses of other cryptocurrencies, our study has shown that most users are not taking advantage of the main privacy feature of Zcash at all. 
+The study applied both well-known clustering heuristics that have been developed for Bitcoin and attribution heuristics developed in the study that take into account Zcash’s shielded pool and its unique cast of characters. As with previous empirical analyses of other cryptocurrencies, this study has shown that most users are not taking advantage of the main privacy feature of Zcash at all. 
 
 
 ### **[References]** ### 
