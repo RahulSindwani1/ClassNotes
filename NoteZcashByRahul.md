@@ -49,7 +49,13 @@ The paper provide the first in-depth empirical analysis of anonymity in Zcash, i
 
 ![alt text](/Images/Capture6.PNG)
 
-**Figure 2 :**  A visualization of the Ripple network as of December 2015. We show only nodes with at least one link in the network. Different colors represent the communities (as computed by Gephi) in the network.
+**Heuristics 3/ Founder Heuristic** Any z-to-t transaction carrying 250.0001 ZEC in value is done by the founders.4.
+
+**Heuristic 4/Miner Heuristic**  If a z-to-t transaction has over 100 output taddresses, one of which belongs to a known mining pool, then we label the transaction as a mining withdrawal (associated with that pool), and label all non-pool output t-addresses as belonging to miners. As a result of running this heuristic, the paper tagged 110,918 addresses as belonging to miners, and linked a much more significant portion of the z-to-t transactions as shown in Figure 1.
+
+![alt text](/Images/Capture7.PNG)
+
+**Figure 1 :** The z-to-t transactions associated with miners, founders, and ‘other’, after running some combination of  heuristics. 
 
 
 This work aims at improving the understanding of the traceability of Ripple ﬂows and using it to explore the privacy breaches. The paper contributed by clustering diﬀerent Ripple wallets belonging to same users which further allows to recognize previously unlinked transactions performed by the known Ripple users and deanonymization of businesses performed over Ripple. The paper presents two novel heuristics to cluster Ripple wallets. 
