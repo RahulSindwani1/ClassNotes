@@ -59,40 +59,29 @@ The paper provide the first in-depth empirical analysis of anonymity in Zcash, i
 
 
 ### **[Challenges and Differences with Related Works]** ### 
-There has been a significant volume of research in providing solutions for existing cryptocurrencies that allow interested users to mix their coins in a way that achieves better anonymity than regular transactions [15, 41, 21, 24, 39, 14, 22, 25]. There has also been a significantvolume of research on de-anonymizing Bitcoin [37, 38,12, 27, 40]. In comparison, this paper implements heuristics but also provides a broader perspective on the entire Zcash ecosystem, as well as a more in-depth analysis of all interactions with (and within) the shielded pool.
+There has been a significant volume of research in providing solutions for existing cryptocurrencies that allow interested users to mix their coins in a way that achieves better anonymity than regular transactions [1, 2, 3, 4, 5, 6]. There has also been a significantvolume of research on de-anonymizing Bitcoin [7, 8, 9, 10]. In comparison, this paper implements heuristics but also provides a broader perspective on the entire Zcash ecosystem, as well as a more in-depth analysis of all interactions with (and within) the shielded pool.
 
 ### **[Conclusions]** ### 
 The study applied both well-known clustering heuristics that have been developed for Bitcoin and attribution heuristics developed in the study that take into account Zcash’s shielded pool and its unique cast of characters. As with previous empirical analyses of other cryptocurrencies, this study has shown that most users are not taking advantage of the main privacy feature of Zcash at all. 
 
 
 ### **[References]** ### 
-[1] Bitcoin Wiki: Mixing Services. https://en.bitcoin.it/wiki/Category:Mixing_Services.
+[1] J. Bonneau, A. Narayanan, A. Miller, J. Clark, J. A. Kroll, and E. W. Felten. Mixcoin: Anonymity for Bitcoin with accountable mixes. In N. Christin and R. Safavi-Naini, editors, FC 2014, volume 8437 of LNCS, pages 486–504, Christ Church, Barbados, Mar. 3–7, 2014. Springer, Heidelberg, Germany.
 
-[2] CoinJoin: Bitcoin Privacy for the Real World. Post on Bitcoin Forum, Aug. 2013. https://bitcointalk.org/index.php?topic=279249.
+[2] L. Valenta and B. Rowan. Blindcoin: Blinded, accountable mixes for Bitcoin. In M. Brenner, N. Christin, B. Johnson, and K. Rohloff, editors, FC 2015 Workshops, volume 8976 of LNCS, pages 112–126, San Juan, Puerto Rico, Jan. 30, 2015. Springer, Heidelberg, Germany.
 
-[3] Barber, S., Boyen, X., Shi, E., and Uzun, E. 16th International Conference Financial Cryptography and Data Security. 2012, ch. Bitter to Better — How to Make Bitcoin a Better Currency, pp. 399–414.
+[3] E. Heilman, L. Alshenibr, F. Baldimtsi, A. Scafuro, and S. Goldberg. TumbleBit: an untrusted Bitcoin-compatible anonymous payment hub. In Proceedings of NDSS 2017, 2017.
 
-[4] Bissias, G., Ozisik, A. P., Levine, B. N., and Liberatore, M. Sybil-resistant mixing for bitcoin. In Proceedings of the 13th Workshop on Privacy in the Electronic Society,
-WPES ’14, pp. 149–158.
+[4] G. Maxwell. CoinJoin: Bitcoin privacy for the real world.bitcointalk.org/index.php?topic=279249, Aug. 2013.
 
-[5] Bonneau, J., Narayanan, A., Miller, A., Clark, J., Kroll, J. A., and Felten, E. W. Mixcoin: Anonymity for Bitcoin with accountable mixes. In Proc. of the 17th International Conference on Financial Cryptography and Data Security, FC’14, Springer.
+[5] T. Ruffing, P. Moreno-Sanchez, and A. Kate. CoinShuffle: Practical decentralized coin mixing for Bitcoin. In M. Kutylowski and J. Vaidya, editors, ESORICS 2014, Part II, volume 8713 of LNCS, pages 345–364, Wroclaw, Poland, Sept. 7–11, 2014. Springer, Heidelberg, Germany. T. Ruffing, P. Moreno-Sanchez, and A. Kate. CoinShuffle: Practical decentralized coin mixing for Bitcoin. In M. Kutylowski and J. Vaidya, editors, ESORICS 2014, Part II, volume 8713 of LNCS, pages 345–364, Wroclaw, Poland, Sept. 7–11, 2014. Springer, Heidelberg, Germany.
 
-[6] Heilman, E., Baldimtsi, F., and Goldberg, S. Blindly signed contracts: Anonymous on-blockchain and offblockchain bitcoin transactions. IACR Cryptology ePrint Archive 2016 (2016), 56.
+[6] G. Bissias, A. P. Ozisik, B. N. Levine, and M. Liberatore. Sybilresistant mixing for Bitcoin. In Proceedings of the 13th Workshop on Privacy in the Electronic Society (WEIS), pages 149–158, 2014.
 
-[7] Ruffing, T., Moreno-Sanchez, P., and Kate, A. CoinShuffle: Practical Decentralized Coin Mixing for Bitcoin. Computer Security - ESORICS 2014: 19th European Symposium on Research in Computer Security. pp. 345–364.
+[7] F. Reid and M. Harrigan. An analysis of anonymity in the Bitcoin system. In Security and privacy in social networks, pages 197–223. Springer, 2013.
 
-[8] Valenta, L., and Rowan, B. Blindcoin: Blinded, Accountable Mixes for Bitcoin. FC 2015 International BITCOIN Workshops Financial Cryptography and Data Security.
-pp. 112–126.
+[8] D. Ron and A. Shamir. Quantitative analysis of the full Bitcoin transaction graph. In A.-R. Sadeghi, editor, FC 2013, volume 7859 of LNCS, pages 6–24, Okinawa, Japan, Apr. 1–5, 2013. Springer, Heidelberg, Germany.
 
-[9] ] Ziegeldorf, J. H., Grossmann, F., Henze, M., Inden, N., and Wehrle, K. Coinparty: Secure multi-party mixing of bitcoins. In Proceedings of the 5th ACM Conference on Data and Application Security and Privacy (2015), pp. 75–86.
+[9] E. Androulaki, G. Karame, M. Roeschlin, T. Scherer, and S. Capkun. Evaluating user privacy in Bitcoin. In A.-R. Sadeghi, editor, FC 2013, volume 7859 of LNCS, pages 34–51, Okinawa, Japan, Apr. 1–5, 2013. Springer, Heidelberg, Germany.
 
-[10] Korayem, M., and Crandall, D. J. De-anonymizing users across heterogeneous social computing platforms. In ICWSM (2013), E. Kiciman, N. B. Ellison, B. Hogan, P. Resnick,
-and I. Soboroff, Eds., The AAAI Press.
-
-[11] Narayanan, A., and Shmatikov, V. De-anonymizing social networks. In Proceedings of the 2009 30th IEEE Symposium on Security and Privacy, pp. 173–187.
-
-[12] Hay, M., Miklau, G., Jensen, D., Towsley, D., and Weis, P. Resisting Structural Re-identification in Anonymized Social Networks. Proc. VLDB Endow. 1, 1 (2008), 102–114.
-
-[13] Mittal, P., Papamanthou, C., and Song, D. X. Preserving Link Privacy in Social Network Based Systems. In Network and Distributed System Security 2013.
-
-[14] Sala, A., Zhao, X., Wilson, C., Zheng, H., and Zhao, B. Y. Sharing graphs using differentially private graph models. Proceedings of the 2011 ACM SIGCOMM Conference on Internet Measurement Conference, pp. 81–98.
+[10] S. Meiklejohn, M. Pomarole, G. Jordan, K. Levchenko, D. McCoy, G. M. Voelker, and S. Savage. A fistful of bitcoins: characterizing payments among men with no names. In Proceedings of the 2013 Internet Measurement Conference (IMC), pages 127–140, 2013.
